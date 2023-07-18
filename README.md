@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# SwitchButton Component
+The SwitchButton component is a simple React component that allows users to switch between two states and apply any handler to this button
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
+To use the SwitchButton component, you need to have a React project set up. If you don't have one, you can create a new React application using Create React App or any other preferred method.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Usage
+To integrate the SwitchButton component into your application, follow these steps:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1.install component in any folder and import and import it
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+```import SwitchButton from './YourFolder/SwitchButton';```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2.initialize the component with the required properties
 
-### `npm run build`
+```javascript
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<SwitchButton
+        action={handleAction}
+        onText="ON"
+        offText="OFF"
+        onColor="#1ABC9C"
+        offColor="#000" 
+        buttonSizeWidth="100px"
+        buttonSizeHeight="50px"
+        imageSrc={OnIcon}
+        imagePosition="right"
+        imageSize="10%"
+        textPosition="left"
+        distant='15%'
+        border='medium'
+        textSize='25px'
+        textWeight='bold'
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+      />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+## property list: 
+  ### action: 
+  
+parameter accepts your handler which is activated on toggle
+  
+### onText:
+  
+The parameter accepts any string value that is displayed when enabled (off by default)
 
-### `npm run eject`
+### offText:
+The parameter accepts any string value that is displayed when the state is off (off by default)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### onColor:
+button background color when enabled
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### offColor:
+button background color when enabled
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### buttonSizeWidth:
+  width of button (accepts any units allowed by css)
+### buttonSizeHeight:
+height of button (accepts any units allowed by css)
+### imageSrc={Put our image props here}
+### imagePosition:
+positioning of the icon/image of the button. Default(Left) Available Values: Right, Left
+  
+### imageSize:
+size of your {image};
+### textPosition:
+text position of the button. Default(Left) Available Values: Right, Left
+### distant:
+uses flex-gap as the calculation for the distance between all items (Default 5%)
+### border:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+button rounding. (Default medium) Available values: lught,medium,rounded
+### textSize:
+size of button text
+### textWeight:
+Text weight, accepts all available css values ​​of the font-weight property
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
