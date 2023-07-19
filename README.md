@@ -39,43 +39,52 @@ To integrate the SwitchButton component into your application, follow these step
 
 ```
 ## property list: 
-  ### action: 
+  `action` 
   
 parameter accepts your handler which is activated on toggle
   
-### onText:
+`onText`
   
 The parameter accepts any string value that is displayed when enabled (off by default)
 
-### offText:
+`offText`
 The parameter accepts any string value that is displayed when the state is off (off by default)
 
-### onColor:
+`onColor`
 button background color when enabled
 
-### offColor:
+`offColor`
 button background color when enabled
 
-### buttonSizeWidth:
+`buttonSizeWidth`
   width of button (accepts any units allowed by css)
-### buttonSizeHeight:
+  
+`buttonSizeHeight`
 height of button (accepts any units allowed by css)
-### imageSrc={Put our image props here}
-### imagePosition:
+
+`imageSrc`
+{Put our image props }
+
+`imagePosition`
 positioning of the icon/image of the button. Default(Left) Available Values: Right, Left
   
-### imageSize:
+`imageSize`
 size of your {image};
-### textPosition:
+
+`textPosition`
 text position of the button. Default(Left) Available Values: Right, Left
-### distant:
+
+`distant`
 uses flex-gap as the calculation for the distance between all items (Default 5%)
-### border:
+
+`border`
 
 button rounding. (Default medium) Available values: lught,medium,rounded
-### textSize:
+
+`textSize`
 size of button text
-### textWeight:
+
+`textWeight`
 Text weight, accepts all available css values ​​of the font-weight property
 
 
